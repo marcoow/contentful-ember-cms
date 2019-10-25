@@ -1,7 +1,24 @@
 # contentful
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a short example project that show how one would load content from
+Contentful as part of the Ember build, transform the content into a format that
+is easily digestable for the Ember.js application and write it to JSON file(s)
+that can be deployed with the application.
+
+This uses Contentful's
+[Sync API](https://contentful.github.io/contentful.js/contentful/7.10.0/Sync.html)
+so that it downloads **all** of the content during the initial build (e.g. on
+CI or when just starting up the Ember.js development server) and on subsequent
+builds only loads the delta between the previously loaded content and the
+latest content on Contentful's servers. This can be helpful during development
+when working both on the Ember.js application and the content (and potentially
+content model) in Cloudflare. In that case, one would want to always see the
+latest content without having to download all of it every time. This behavior
+can be opted in to with the `LIVE_CONTENT` environment variable:
+
+```
+LIVE_CONTENT=1 ember s
+```
 
 ## Prerequisites
 
