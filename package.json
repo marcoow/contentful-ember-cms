@@ -42,6 +42,7 @@
     "ember-source": "~3.11.1",
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^9.0.1",
+    "is-number": "^7.0.0",
     "loader.js": "^4.7.0",
     "prember": "^1.0.3",
     "qunit-dom": "^0.8.4"
