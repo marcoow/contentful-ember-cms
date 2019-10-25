@@ -1,0 +1,11 @@
+{
+  "name": "content",
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "broccoli-caching-writer": "^3.0.3",
+    "contentful": "^7.10.0",
+    "fs-extra": "^8.1.0"
+  }
+}
